@@ -1,7 +1,10 @@
 <script setup></script>
 
 <template>
-  <main>
-    <h1>你好！</h1>
-  </main>
+  <h1
+    class="animate__animated animate__zoomInDown"
+    style="font-size: 72px; color: #e69138"
+  >
+    你好！
+  </h1>
 </template>
