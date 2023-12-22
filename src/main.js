@@ -6,6 +6,8 @@ import router from "./router";
 
 import "animate.css";
 
+import "virtual:uno.css";
+
 const app = createApp(App);
 
 app.use(createPinia());
