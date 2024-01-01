@@ -1,6 +1,6 @@
 <template>
   <div class="home-view">
-    <div class="job">
+    <div class="job" @click="toJobPage">
       <span>工作</span>
       <span class="resume">（个人简历）</span>
     </div>
@@ -11,7 +11,14 @@
 <script setup>
 import { useRouter } from "vue-router";
 
-const toLifePage = () => {};
+const router = useRouter();
+const toJobPage = () => {
+  router.push({ name: "job" });
+};
+
+const toLifePage = () => {
+  router.push({ name: "life" });
+};
 </script>
 
 <style lang="less" scoped>
@@ -33,6 +40,7 @@ const toLifePage = () => {};
     height: 100px;
     font-size: 14px;
     border-radius: 10px;
+    cursor: pointer;
   }
   .job {
     position: relative;
