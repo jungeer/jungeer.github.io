@@ -19,14 +19,26 @@ const router = createRouter({
       name: "life",
       component: () => import("@/views/life/index.vue"),
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue')
-    // }
+    {
+      path: "/life/idol",
+      name: "/life/idol",
+      component: () => import("@/views/life/idol/index.vue"),
+    },
+    {
+      path: "/life/travel",
+      name: "/life/travel",
+      component: () => import("@/views/life/travel/index.vue"),
+    },
+    {
+      path: "/life/movies",
+      name: "/life/movies",
+      component: () => import("@/views/life/movies/index.vue"),
+    },
+    {
+      path: "/life/ootd",
+      name: "/life/ootd",
+      component: () => import("@/views/life/ootd/index.vue"),
+    },
   ],
 });
 

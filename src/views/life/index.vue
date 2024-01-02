@@ -4,7 +4,7 @@
       <template v-for="(boxs, index) in boxss" :key="index">
         <div class="flex gap-10px">
           <template v-for="box in boxs" :key="box">
-            <div class="box module">
+            <div class="box module" @click="toPage(box)">
               <span>{{ box }}</span>
             </div>
           </template>
@@ -27,12 +27,27 @@
 <script setup>
 import { onMounted } from "vue";
 
+import { useRouter } from "vue-router";
+
 import { Fireworks } from "fireworks-js";
 
 const boxss = [
   ["偶像", "电影"],
   ["旅行", "穿搭"],
 ];
+
+const router = useRouter();
+
+const toPage = (boxText) => {
+  const routerMap = {
+    偶像: "/life/idol",
+    电影: "/life/movies",
+    旅行: "/life/travel",
+    穿搭: "/life/ootd",
+  };
+
+  router.push({ name: routerMap[boxText] });
+};
 
 onMounted(() => {
   const container = document.querySelector(".life");
