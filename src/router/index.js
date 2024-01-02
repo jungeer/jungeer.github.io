@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import("@/views/life/index.vue"),
     },
     {
+      path: "/life/me",
+      name: "/life/me",
+      component: () => import("@/views/life/me/index.vue"),
+    },
+    {
       path: "/life/idol",
       name: "/life/idol",
       component: () => import("@/views/life/idol/index.vue"),
