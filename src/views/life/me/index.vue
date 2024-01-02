@@ -61,14 +61,14 @@
 
         <p>
           <span class="font-500 text-14px">11.</span>
-          由于长得不好，所以有时候得做点保养
+          有时候得做点保养
         </p>
 
         <p>用科颜氏，用欧莱雅，用相宜本草</p>
 
         <p>
           <span class="font-500 text-14px">12.</span>
-          由于长得不好，所以有时候要买新衣服
+          有时候要买新衣服
         </p>
 
         <p>偏好简约，质感</p>
@@ -101,6 +101,8 @@
 
         <p>（真诚，热切，坦诚相待，用心，全力以赴… 很难吗？是吗？是吧？）</p>
 
+        <p>如果两个人在一起不能比一个人时更好更快乐，那为什么要选择两个人？</p>
+
         <p>
           <span class="font-500 text-14px">16.</span>
           不是很喜欢人这种生物（特别是变了质的男人女人们）
@@ -114,12 +116,17 @@
         <p><span class="font-500 text-14px">18.</span> 少年 👦🏻</p>
 
         <p>
-          1<span class="font-500 text-14px">19.</span> 希望每一天都是简单的
-          happy day.
+          <span class="font-500 text-14px">19.</span> 希望每一天都是简单的 happy
+          day.
         </p>
 
         <p>
           <span class="font-500 text-14px">20.</span>
+          有理想，其一是当民宿老板，其二是想当慈善家
+        </p>
+
+        <p>
+          <!-- <span class="font-500 text-14px">21.</span> -->
           最后说一句：如果你喜欢我，你就会很喜欢很喜欢我 ~
         </p>
 
@@ -130,7 +137,7 @@
       </div>
 
       <p class="mt-16px font-500 color-#576D93">广东·深圳</p>
-      <p class="color-#AFAFAF">2024年1月2日 22:14</p>
+      <p class="color-#AFAFAF">2024年1月2日 22:39</p>
     </div>
   </div>
 </template>
