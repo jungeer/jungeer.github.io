@@ -11,8 +11,14 @@
         </div>
       </template>
       <div class="flex gap-10px">
-        <div class="box question">❔</div>
-        <div class="box question">❔</div>
+        <div class="box question">
+          <span class="text-24px">❔</span>
+          <!-- <span class="random">（发现3个惊喜页）</span> -->
+        </div>
+        <div class="box question">
+          <span class="text-24px">❔</span>
+          <!-- <span class="random">（发现更多）</span> -->
+        </div>
       </div>
     </div>
   </div>
@@ -51,9 +57,15 @@ const boxss = [
       border: 2px solid #fcfbf7;
     }
     &.question {
-      font-size: 30px;
+      position: relative;
       background: rgba(165, 111, 69, 0.9);
       border: 2px solid #cf5735;
+      .random {
+        position: absolute;
+        top: 70px;
+        font-size: 10px;
+        color: white;
+      }
     }
   }
 }
