@@ -1,6 +1,6 @@
 <template>
   <div class="life">
-    <div class="flex flex-col justify-center flex-wrap gap-10px">
+    <div class="absolute flex flex-col justify-center flex-wrap gap-10px">
       <template v-for="(boxs, index) in boxss" :key="index">
         <div class="flex gap-10px">
           <template v-for="box in boxs" :key="box">
@@ -13,11 +13,11 @@
       <div class="flex gap-10px">
         <div class="box question">
           <span class="text-24px">❔</span>
-          <!-- <span class="random">（发现3个惊喜页）</span> -->
+          <span class="random">（发现3个惊喜页）</span>
         </div>
         <div class="box question">
           <span class="text-24px">❔</span>
-          <!-- <span class="random">（发现更多）</span> -->
+          <span class="random">（发现更多）</span>
         </div>
       </div>
     </div>
@@ -25,10 +25,22 @@
 </template>
 
 <script setup>
+import { onMounted } from "vue";
+
+import { Fireworks } from "fireworks-js";
+
 const boxss = [
   ["偶像", "电影"],
   ["旅行", "穿搭"],
 ];
+
+onMounted(() => {
+  const container = document.querySelector(".life");
+  const fireworks = new Fireworks(container, {
+    /* options */
+  });
+  fireworks.start();
+});
 </script>
 
 <style lang="less" scoped>
@@ -42,6 +54,8 @@ const boxss = [
   gap: 10px;
   font-size: 20px;
   background-color: rgba(237, 237, 237, 0.6);
+  // background: url("./night-sky.jpg") no-repeat;
+  // background-size: 100% 100%;
   .box {
     display: flex;
     justify-content: center;
