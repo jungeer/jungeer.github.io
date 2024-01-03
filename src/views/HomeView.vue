@@ -4,7 +4,10 @@
       <span>工作</span>
       <span class="resume">（个人简历）</span>
     </div>
-    <div class="life" @click="toLifePage">生活</div>
+    <div class="life" @click="toLifePage">
+      <span>生活</span>
+      <span class="suprise">（充满惊喜）</span>
+    </div>
   </div>
 </template>
 
@@ -33,6 +36,7 @@ const toLifePage = () => {
   background-color: rgba(237, 237, 237, 0.6);
   .job,
   .life {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +47,6 @@ const toLifePage = () => {
     cursor: pointer;
   }
   .job {
-    position: relative;
     background-color: #fcfbf7;
     color: #cf5735;
     border: 2px solid #cf5735;
@@ -57,6 +60,11 @@ const toLifePage = () => {
     background: #cf5735;
     color: #fcfbf7;
     border: 2px solid #fcfbf7;
+    .suprise {
+      position: absolute;
+      top: 60px;
+      font-size: 10px;
+    }
   }
 }
 </style>
