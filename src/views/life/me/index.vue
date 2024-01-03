@@ -1,5 +1,5 @@
 <template>
-  <div class="me">
+  <div class="me-page">
     <div class="min-w-40px min-h-40px">
       <a-image :src="leehom" :width="40" :preview="false"></a-image>
     </div>
@@ -150,7 +150,7 @@ import record3 from "@/images/record3.jpg";
 </script>
 
 <style lang="less" scoped>
-.me {
+.me-page {
   display: flex;
   gap: 12px;
   width: 100%;
