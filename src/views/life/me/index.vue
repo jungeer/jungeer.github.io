@@ -5,30 +5,32 @@
     </div>
     <div class="flex flex-col">
       <span class="font-500 text-18px color-#576D93">俊哥儿乐___</span>
-      <div class="mt-16px italic">
+      <div class="mt-16px pr-16px italic">
         <!-- <p>（废话很多，不喜勿扰）</p>
 
         <p>（有些事情，现在不做，以后都不会去做了）</p> -->
 
-        <p><span class="font-500 text-14px">1.</span> 1995-05-22 男 👦🏻</p>
+        <p><span class="font-500 text-14px">1. </span>1995-05-22 男 👦🏻</p>
 
-        <p><span class="font-500 text-14px">2.</span> 广东揭阳人，在深圳长大</p>
+        <p><span class="font-500 text-14px">2. </span>广东揭阳人，在深圳长大</p>
 
         <p>
-          <span class="font-500 text-14px">3.</span>
-          前端开发工程师，能编码，能写网页…
+          <span class="font-500 text-14px">3. </span>
+          <span class="font-500 underline color-#576D93" @click="toJobPage"
+            >前端开发工程师</span
+          >，能编码，能写网页…
         </p>
 
         <p>
-          <span class="font-500 text-14px">4.</span>
-          身高不高，颜值不高，气质没有
+          <span class="font-500 text-14px">4. </span
+          >身高不高，颜值不高，气质没有
         </p>
 
-        <p><span class="font-500 text-14px">5.</span> 认清现实的理想主义</p>
+        <p><span class="font-500 text-14px">5 .</span>认清现实的理想主义</p>
 
         <p>
-          <span class="font-500 text-14px">6.</span>
-          成长是为了更温柔，而不是变得更冷漠
+          <span class="font-500 text-14px">6. </span
+          >成长是为了更温柔，而不是变得更冷漠
         </p>
 
         <p>
@@ -42,46 +44,51 @@
 
         <p>认清社会的残酷真相后，依然热爱生活，热爱他人，热爱自己</p>
 
-        <p><span class="font-500 text-14px">7.</span> 热爱世间万物</p>
+        <p><span class="font-500 text-14px">7. </span>热爱世间万物</p>
 
         <p>
-          <span class="font-500 text-14px">8.</span>
-          喜欢王力宏（问就是超级超级超级超级超级喜欢），科比，田馥甄
+          <span class="font-500 text-14px">8. </span>
+          <span class="font-500 underline color-#576D93" @click="toIdolPage"
+            >喜欢王力宏（问就是超级超级超级超级超级喜欢），科比，田馥甄</span
+          >
         </p>
 
         <p>
-          <span class="font-500 text-14px">9.</span> 看电影，阅读，跑步，听音乐
-          🎵 搞学习，写代码 ~
+          <span class="font-500 text-14px">9. </span>
+          <span class="font-500 underline color-#576D93" @click="toMoviesPage"
+            >看电影</span
+          >，阅读，跑步，听音乐 🎵 搞学习，写代码 ~
         </p>
 
         <p>
-          <span class="font-500 text-14px">10.</span>
-          喜欢旅行，喜欢吃好吃的（啥都好吃，除了千万别给我吃冬阴功）
+          <span class="font-500 text-14px">10. </span>
+          <span class="font-500 underline color-#576D93" @click="toTravelPage"
+            >喜欢旅行</span
+          >，喜欢吃好吃的（啥都好吃，除了千万别给我吃冬阴功）
         </p>
 
-        <p>
-          <span class="font-500 text-14px">11.</span>
-          有时候得做点保养
-        </p>
+        <p><span class="font-500 text-14px">11. </span>有时候得做点保养</p>
 
         <p>用科颜氏，用欧莱雅，用相宜本草</p>
 
         <p>
-          <span class="font-500 text-14px">12.</span>
-          有时候要买新衣服
+          <span class="font-500 text-14px">12. </span>
+          <span class="font-500 underline color-#576D93" @click="toOotdPage"
+            >有时候要买新衣服</span
+          >
         </p>
 
         <p>偏好简约，质感</p>
 
         <p>
-          <span class="font-500 text-14px">13.</span> 好巧不巧，好习惯占了很多
+          <span class="font-500 text-14px">13. </span>好巧不巧，好习惯占了很多
         </p>
 
         <p>少吃零食多睡觉，早睡早起身体好，多喝热水</p>
 
         <p>
-          <span class="font-500 text-14px">14.</span>
-          没什么朋友，别听别人的朋友圈干净了，听听我的吧 ~
+          <span class="font-500 text-14px">14. </span
+          >没什么朋友，别听别人的朋友圈干净了，听听我的吧 ~
         </p>
 
         <p>可干净了，一年从头到尾，都是在自娱自乐</p>
@@ -92,7 +99,7 @@
         </p>
 
         <p>
-          <span class="font-500 text-14px">15.</span> 爱情 > 亲情 > 友情 > 其他
+          <span class="font-500 text-14px">15. </span>爱情 > 亲情 > 友情 > 其他
         </p>
 
         <p>对情感要求很高，标准很高</p>
@@ -104,25 +111,25 @@
         <p>如果两个人在一起不能比一个人时更好更快乐，那为什么要选择两个人？</p>
 
         <p>
-          <span class="font-500 text-14px">16.</span>
-          不是很喜欢人这种生物（特别是变了质的男人女人们）
+          <span class="font-500 text-14px">16. </span
+          >不是很喜欢人这种生物（特别是变了质的男人女人们）
         </p>
 
         <p>
-          <span class="font-500 text-14px">17.</span>
-          我的理想评判标准就是理想主义 ~
+          <span class="font-500 text-14px">17. </span
+          >我的理想评判标准就是理想主义 ~
         </p>
 
-        <p><span class="font-500 text-14px">18.</span> 少年 👦🏻</p>
+        <p><span class="font-500 text-14px">18. </span>少年 👦🏻</p>
 
         <p>
-          <span class="font-500 text-14px">19.</span> 希望每一天都是简单的 happy
+          <span class="font-500 text-14px">19. </span>希望每一天都是简单的 happy
           day.
         </p>
 
         <p>
-          <span class="font-500 text-14px">20.</span>
-          有理想，其一是当民宿老板，其二是想当慈善家
+          <span class="font-500 text-14px">20. </span
+          >有理想，其一是当民宿老板，其二是想当慈善家...
         </p>
 
         <p>
@@ -143,10 +150,43 @@
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
+
 import leehom from "@/images/leehom.jpg";
 
 import record1 from "@/images/record1.png";
 import record3 from "@/images/record3.jpg";
+
+const toJobPage = () => {
+  router.push({
+    name: "job",
+  });
+};
+
+const toIdolPage = () => {
+  router.push({
+    name: "/life/idol",
+  });
+};
+
+const toTravelPage = () => {
+  router.push({
+    name: "/life/travel",
+  });
+};
+
+const toMoviesPage = () => {
+  router.push({
+    name: "/life/movies",
+  });
+};
+
+const toOotdPage = () => {
+  router.push({
+    name: "/life/ootd",
+  });
+};
 </script>
 
 <style lang="less" scoped>

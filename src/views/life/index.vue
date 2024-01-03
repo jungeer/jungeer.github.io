@@ -15,7 +15,7 @@
           <span class="text-24px">❔</span>
           <span class="random">（发现3个惊喜页）</span>
         </div>
-        <div class="box question">
+        <div class="box question" @click="toMePage">
           <span class="text-24px">❔</span>
           <span class="random">（发现更多）</span>
         </div>
@@ -47,6 +47,10 @@ const toPage = (boxText) => {
   };
 
   router.push({ name: routerMap[boxText] });
+};
+
+const toMePage = () => {
+  router.push({ name: "/life/me" });
 };
 
 onMounted(() => {
