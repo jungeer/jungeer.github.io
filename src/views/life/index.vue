@@ -13,11 +13,10 @@
       <div class="flex gap-10px">
         <div class="box question">
           <span class="text-24px">❔</span>
-          <span class="random">（发现3个惊喜页）</span>
         </div>
         <div class="box question" @click="toMePage">
           <span class="text-24px">❔</span>
-          <span class="random">（发现更多）</span>
+          <span class="random">（探索惊喜）</span>
         </div>
       </div>
     </div>
