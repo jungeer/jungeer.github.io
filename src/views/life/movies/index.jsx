@@ -67,8 +67,8 @@ export default function MoviesPage() {
           ~ 当然除了惊悚什么什么什么都看 ~
         </p>
         <p>
-          看过的电影还蛮多的吧，偏好是高分的经典电影，豆瓣TOP250，应该得看了有
-          200部了；（除了惊悚，什么什么都看 ~）
+          看过的电影还蛮多的吧，偏好是高分的经典电影，豆瓣 Top250，应该得看了有
+          200 部了；（除了惊悚，什么什么都看 ~）
         </p>
         <p>也有好多好多电影 🎬 看过后也忘记了 ~</p>
         <p>
@@ -95,8 +95,8 @@ export default function MoviesPage() {
           虽然如此，还是会看 ”喜剧“，
           <span class={errorClass}>笑着笑着笑着就哭了哭了的喜剧</span>
           ，是啊，所以我蛮喜欢周星驰的电影，
-          {renderPopover("大话西游")}（”你看那个人，好像一条狗啊“ ~
-          ）他的电影总是充满着深刻又日常的爱（{renderPopover("七品芝麻官")}，
+          {renderPopover("大话西游")}（”你看那个人，好像一条狗啊
+          ~“）他的电影总是充满着深刻又日常的爱（{renderPopover("七品芝麻官")}，
           {renderPopover("武状元苏乞儿")}，{renderPopover("功夫")}，
           {renderPopover("一本漫画走天下")}，{renderPopover("喜剧之王")}，
           {renderPopover("逃学威龙")}，{renderPopover("整蛊专家")}…）
