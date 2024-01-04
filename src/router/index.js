@@ -41,7 +41,7 @@ const router = createRouter({
     {
       path: "/life/movies",
       name: "/life/movies",
-      component: () => import("@/views/life/movies/index.vue"),
+      component: () => import("@/views/life/movies/index.jsx"),
     },
     {
       path: "/life/ootd",
