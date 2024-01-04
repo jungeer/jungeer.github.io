@@ -36,7 +36,7 @@ const router = createRouter({
     {
       path: "/life/travel",
       name: "/life/travel",
-      component: () => import("@/views/life/travel/index.vue"),
+      component: () => import("@/views/life/travel/index.jsx"),
     },
     {
       path: "/life/movies",
