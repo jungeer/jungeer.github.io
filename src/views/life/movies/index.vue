@@ -3,8 +3,10 @@
     <div class="movies-container">
       <a-image-preview-group>
         <a-row>
-          <template v-for="img in getImgs" :key="img">
-            <a-col :span="4"> <a-image :src="img" object-fill></a-image></a-col>
+          <template v-for="img of getImgs" :key="img">
+            <a-col :span="4">
+              <a-image :src="getImgSrc(img)" object-fill></a-image
+            ></a-col>
           </template>
         </a-row>
       </a-image-preview-group>
@@ -17,7 +19,7 @@ import { computed } from "vue";
 
 import { cloneDeep } from "lodash-es";
 
-const imgs = import.meta.glob("@/images/movies/*.{png,jpg,jpeg,svg}");
+const imgs = import.meta.glob("/public/movies/*.{png,jpg,jpeg,svg}");
 
 const shuffleArray = (arr) => {
   const arrTemp = cloneDeep(arr);
@@ -32,6 +34,10 @@ const shuffleArray = (arr) => {
 const getImgs = computed(() => {
   return shuffleArray(Object.keys(imgs).map((url) => url)).slice(0, 60);
 });
+
+const getImgSrc = (src) => {
+  return process.env.NODE_ENV === "development" ? src : src.split("public")[1];
+};
 </script>
 
 <style lang="less" scoped>
