@@ -36,7 +36,7 @@ const getImgs = computed(() => {
 });
 
 const getImgSrc = (src) => {
-  return process.env.NODE_ENV === "development" ? src : src.split("public")[1];
+  return src.split("public")[1];
 };
 </script>
 
