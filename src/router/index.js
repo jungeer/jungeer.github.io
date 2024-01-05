@@ -46,7 +46,7 @@ const router = createRouter({
     {
       path: "/life/ootd",
       name: "/life/ootd",
-      component: () => import("@/views/life/ootd/index.vue"),
+      component: () => import("@/views/life/ootd/index.jsx"),
     },
   ],
 });
