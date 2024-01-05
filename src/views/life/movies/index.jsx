@@ -233,3 +233,5 @@ export default function MoviesPage() {
     </div>
   );
 }
+
+MoviesPage.displayName = "MoviesPage";

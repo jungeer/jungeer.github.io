@@ -103,3 +103,5 @@ export default function TravelPage() {
     </div>
   );
 }
+
+TravelPage.displayName = "TravelPage";

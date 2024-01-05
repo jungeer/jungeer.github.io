@@ -65,3 +65,5 @@ export default function OotdPage() {
     </div>
   );
 }
+
+OotdPage.displayName = "OotdPage";
