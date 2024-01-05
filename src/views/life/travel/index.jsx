@@ -9,7 +9,7 @@ export default function TravelPage() {
         <div class="text-16px font-500">"青春年华，不负韶光" 💐</div>
         <div class="flex gap-12px mt-12px text-12px">
           <span class="color-#576D93">俊哥儿乐___</span>
-          <span class="color-#A9A9A9">2024-01-04 13:48 深圳</span>
+          <span class="color-#A9A9A9">2024-01-04 22:34 深圳</span>
         </div>
       </div>
     );

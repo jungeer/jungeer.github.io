@@ -4,7 +4,7 @@ export default function OotdPage() {
   const renderHeader = () => {
     return (
       <div class="p-12px">
-        <div class="text-16px font-500">"青春年华，不负韶光" 💐</div>
+        <div class="text-16px font-500">"Fashion 与气质的碰撞 👠💥" 💐</div>
         <div class="flex gap-12px mt-12px text-12px">
           <span class="color-#576D93">俊哥儿乐___</span>
           <span class="color-#A9A9A9">2024-01-05 09:22 深圳</span>
@@ -57,9 +57,9 @@ export default function OotdPage() {
   };
 
   return (
-    <div class="w-100% h-100% bg-#ecdcb6/[0.2]">
+    <div class="w-100% h-100% bg-#dfca9b/[0.2]">
       {renderHeader()}
-      {renderThanks()}
+      {/* {renderThanks()} */}
       {renderTextContainer()}
       {renderOotdPhotos()}
     </div>
