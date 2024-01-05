@@ -99,6 +99,10 @@ const technologyList = [
     tags: ["VueRouter", "Vuex", "Pinia", "VueUse", "Lodash", "Dayjs", "Ahooks"],
   },
   {
+    title: "原子化Css",
+    tags: ["TailwindCss", "UnoCss"],
+  },
+  {
     title: "小程序",
     tags: ["UniApp", "ReactTaro"],
   },
@@ -115,12 +119,20 @@ const technologyList = [
     tags: ["Echarts", "Highcharts"],
   },
   {
+    title: "工程化",
+    tags: ["Vite", "Webpack"],
+  },
+  {
     title: "后端",
     tags: ["Nodejs", "Koa", "Express"],
   },
   {
     title: "数据库",
     tags: ["MongoDB", "GraphQL"],
+  },
+  {
+    title: "团队协作",
+    tags: ["Prettier", "Eslint", "Commitlint", "Husky", "Git"],
   },
 ];
 </script>
