@@ -1,5 +1,8 @@
 <template>
-  <div class="home-view">
+  <div
+    class="home-view"
+    :style="{ backgroundImage: `url(${imgs[randomIndex]})` }"
+  >
     <div class="job" @click="toJobPage">
       <span>工作</span>
       <span class="resume">（个人简历）</span>
@@ -13,6 +16,15 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+
+import IMG_5292 from "./IMG_5292.jpg";
+import IMG_5295 from "./IMG_5295.jpg";
+import IMG_5298 from "./IMG_5298.jpg";
+import IMG_5299 from "./IMG_5299.jpg";
+
+const imgs = [IMG_5292, IMG_5295, IMG_5298, IMG_5299];
+
+const randomIndex = Math.floor(Math.random() * imgs.length);
 
 const router = useRouter();
 const toJobPage = () => {
@@ -33,7 +45,9 @@ const toLifePage = () => {
   height: 100%;
   gap: 10px;
   font-size: 20px;
-  background-color: rgba(237, 237, 237, 0.6);
+  // background-color: rgba(237, 237, 237, 0.6);
+  // background-image: url("./IMG_5295.JPG");
+  background-size: 100% 100%;
   .job,
   .life {
     position: relative;
