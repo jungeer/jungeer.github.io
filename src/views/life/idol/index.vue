@@ -1,5 +1,5 @@
 <template>
-  <div class="idol">idol</div>
+  <div class="idol"></div>
 </template>
 
 <script setup></script>
