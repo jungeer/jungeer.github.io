@@ -1,7 +1,8 @@
 <template>
   <div class="me-page">
     <div class="min-w-40px min-h-40px">
-      <a-image :src="leehom" :width="40" :preview="false"></a-image>
+      <a-image :src="leehom" :width="40" :preview="false" placeholder>
+      </a-image>
     </div>
     <div class="flex flex-col">
       <span class="font-500 text-18px color-#576D93">俊哥儿乐___</span>
@@ -142,8 +143,8 @@
         </p>
 
         <a-space>
-          <a-image :src="record1"></a-image>
-          <a-image :src="record3"></a-image>
+          <a-image :src="record1" placeholder> ></a-image>
+          <a-image :src="record3" placeholder> ></a-image>
         </a-space>
       </div>
 
@@ -156,6 +157,8 @@
 <script setup>
 import { useRouter } from "vue-router";
 const router = useRouter();
+
+import { LoadingOutlined } from "@ant-design/icons-vue";
 
 import leehom from "@/images/leehom.jpg";
 

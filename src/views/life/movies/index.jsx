@@ -213,7 +213,7 @@ export default function MoviesPage() {
             {renderImgs.map((img) => {
               return (
                 <a-col span={4}>
-                  <a-image src={img}></a-image>
+                  <a-image src={img} placeholder></a-image>
                 </a-col>
               );
             })}
