@@ -50,7 +50,11 @@ const toPage = (boxText) => {
     穿搭: "/life/ootd",
   };
 
-  router.push({ name: routerMap[boxText] });
+  if (boxText === "旅行") {
+    router.push({ path: "/life/travel", query: { from: "LifePage" } });
+  } else {
+    router.push({ name: routerMap[boxText] });
+  }
 };
 
 const toMePage = () => {

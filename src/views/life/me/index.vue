@@ -176,7 +176,10 @@ const toIdolPage = () => {
 
 const toTravelPage = () => {
   router.push({
-    name: "/life/travel",
+    path: "/life/travel",
+    query: {
+      from: "MePage",
+    },
   });
 };
 
