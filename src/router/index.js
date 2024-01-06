@@ -48,6 +48,11 @@ const router = createRouter({
       name: "/life/ootd",
       component: () => import("@/views/life/ootd/index.jsx"),
     },
+    {
+      path: "/life/running",
+      name: "/life/running",
+      component: () => import("@/views/life/running/index.jsx"),
+    },
   ],
 });
 

@@ -57,7 +57,11 @@
           <span class="font-500 text-14px">9. </span>
           <span class="font-500 underline color-#576D93" @click="toMoviesPage"
             >看电影</span
-          >，阅读，跑步，听音乐 🎵 搞学习，写代码 ~
+          >，阅读，<span
+            class="font-500 underline color-#576D93"
+            @click="toRunningPage"
+            >跑步</span
+          >，听音乐 🎵 搞学习，写代码 ~
         </p>
 
         <p>
@@ -185,6 +189,12 @@ const toMoviesPage = () => {
 const toOotdPage = () => {
   router.push({
     name: "/life/ootd",
+  });
+};
+
+const toRunningPage = () => {
+  router.push({
+    name: "/life/running",
   });
 };
 </script>
