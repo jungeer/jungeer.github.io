@@ -19,10 +19,9 @@ import { useRouter } from "vue-router";
 
 import IMG_5292 from "./IMG_5292.jpg";
 import IMG_5295 from "./IMG_5295.jpg";
-import IMG_5298 from "./IMG_5298.jpg";
 import IMG_5299 from "./IMG_5299.jpg";
 
-const imgs = [IMG_5292, IMG_5295, IMG_5298, IMG_5299];
+const imgs = [IMG_5292, IMG_5295, IMG_5299];
 
 const randomIndex = Math.floor(Math.random() * imgs.length);
 
@@ -61,7 +60,7 @@ const toLifePage = () => {
     cursor: pointer;
   }
   .job {
-    background-color: #fcfbf7;
+    background-color: rgba(252, 251, 247, 0.8);
     color: #cf5735;
     border: 2px solid #cf5735;
     .resume {
@@ -71,7 +70,7 @@ const toLifePage = () => {
     }
   }
   .life {
-    background: #cf5735;
+    background: rgba(207, 87, 53, 0.8);
     color: #fcfbf7;
     border: 2px solid #fcfbf7;
     .suprise {

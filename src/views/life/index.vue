@@ -1,11 +1,16 @@
 <template>
   <div class="life">
-    <div class="absolute flex flex-col justify-center flex-wrap gap-10px">
+    <div
+      class="absolute flex flex-col justify-center items-center flex-wrap gap-10px"
+    >
+      <div class="text-12px color-white">
+        你知道吗？心存浪漫，白天也能看到烟花 🎆
+      </div>
       <template v-for="(boxs, index) in boxss" :key="index">
         <div class="flex gap-10px">
           <template v-for="box in boxs" :key="box">
             <div class="box module" @click="toPage(box)">
-              <span>{{ box }}</span>
+              <span class="font-500">{{ box }}</span>
             </div>
           </template>
         </div>
@@ -71,26 +76,27 @@ onMounted(() => {
   height: 100%;
   gap: 10px;
   font-size: 20px;
-  background-color: rgba(237, 237, 237, 0.6);
+  // background-color: rgba(237, 237, 237, 0.6);
+  background-image: url("./IMG_5298.jpg");
   // background: url("./night-sky.jpg") no-repeat;
-  // background-size: 100% 100%;
+  background-size: cover;
   .box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 10px;
     cursor: pointer;
     &.module {
-      background: #cf5735;
+      background: rgba(207, 87, 53, 0.5);
       color: #fcfbf7;
       border: 2px solid #fcfbf7;
     }
     &.question {
       position: relative;
-      background: rgba(165, 111, 69, 0.9);
+      background: rgba(165, 111, 69, 0.5);
       border: 2px solid #cf5735;
       .random {
         position: absolute;
