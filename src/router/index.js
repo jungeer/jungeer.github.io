@@ -13,11 +13,18 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
+    /**
+     * 工作
+     */
     {
       path: "/job",
       name: "job",
       component: () => import("@/views/job/index.vue"),
     },
+
+    /**
+     * 生活
+     */
     {
       path: "/life",
       name: "life",
@@ -53,10 +60,19 @@ const router = createRouter({
       name: "/life/running",
       component: () => import("@/views/life/running/index.jsx"),
     },
+
+    /**
+     * 我的 3000 Love
+     */
     {
-      path: "/life/my-soul",
-      name: "/life/my-soul",
-      component: () => import("@/views/life/my-soul/index.jsx"),
+      path: "/soul",
+      name: "soul",
+      component: () => import("@/views/soul/index.jsx"),
+    },
+    {
+      path: "/soul/3000love",
+      name: "/soul/3000love",
+      component: () => import("@/views/soul/3000love/index.jsx"),
     },
   ],
 });
