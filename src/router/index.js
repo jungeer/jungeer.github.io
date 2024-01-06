@@ -53,6 +53,11 @@ const router = createRouter({
       name: "/life/running",
       component: () => import("@/views/life/running/index.jsx"),
     },
+    {
+      path: "/life/my-soul",
+      name: "/life/my-soul",
+      component: () => import("@/views/life/my-soul/index.jsx"),
+    },
   ],
 });
 
