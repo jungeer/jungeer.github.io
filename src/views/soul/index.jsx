@@ -27,7 +27,7 @@ export default function MySpacePage() {
 
   return (
     <div class="soul p-12px">
-      <div class="text-16px font-500">"第三空间：灵魂" 💐</div>
+      <div class="text-16px font-500 text-center">"第三空间：灵魂 💐"</div>
       {renderBoxs()}
     </div>
   );

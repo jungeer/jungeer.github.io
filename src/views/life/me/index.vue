@@ -136,7 +136,7 @@
           >有理想，其一是当民宿老板，其二是想当慈善家...
         </p>
 
-        <p>
+        <p class="font-500 underline color-#576D93" @click="toSoulPage">
           <!-- <span class="font-500 text-14px">21.</span> -->
           最后说一句：如果你喜欢我，你就会很喜欢很喜欢我 ~
         </p>
@@ -198,6 +198,12 @@ const toOotdPage = () => {
 const toRunningPage = () => {
   router.push({
     name: "/life/running",
+  });
+};
+
+const toSoulPage = () => {
+  router.push({
+    name: "soul",
   });
 };
 </script>
